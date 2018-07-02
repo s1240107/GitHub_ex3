@@ -1,11 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<string.h>
 
 int main(){
   srand(time(NULL));
   
   int i, a[2], sum=0;
+  char name[30];
+
+  printf("What is your name?\n");
+  scanf("%s", &name);
+  printf("Hello, %s!\n", &name);
+  
   
   printf("Rolling the dice...\n");
  
